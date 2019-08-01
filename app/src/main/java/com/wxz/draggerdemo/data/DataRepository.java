@@ -2,11 +2,13 @@ package com.wxz.draggerdemo.data;
 
 import com.wxz.draggerdemo.DataSource;
 import com.wxz.draggerdemo.Net;
+import com.wxz.draggerdemo.di.ApplicationScope;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
 @Singleton
+@ApplicationScope
 public class DataRepository implements DataSource {
 
     private final ServiceApi serviceApi;

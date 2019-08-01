@@ -14,7 +14,7 @@ public class SplashPresenter implements SplashContact.Presenter {
 
     @Inject
     public SplashPresenter(ServiceApi serviceApi){
-
+        mServiceApi = serviceApi;
     }
     @Override
     public void takeView(SplashContact.View view) {

@@ -1,6 +1,9 @@
 package com.wxz.draggerdemo.di;
 
+import com.wxz.draggerdemo.SplashActivity;
+
 import dagger.Module;
+import dagger.android.ContributesAndroidInjector;
 
 /**
  * We want Dagger.Android to create a Subcomponent which has a parent Component of whichever module ActivityBindingModule is on,
@@ -13,7 +16,7 @@ import dagger.Module;
 public abstract class ActivityBindingModule {
 //    @ActivityScoped
 //    @ContributesAndroidInjector(modules = TasksModule.class)
-//    abstract TasksActivity tasksActivity();
+//    abstract SplashActivity splashActivity();
 //
 //    @ActivityScoped
 //    @ContributesAndroidInjector(modules = AddEditTaskModule.class)
